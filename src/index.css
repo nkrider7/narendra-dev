@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'Cubano';
+  src: url('./static/font/Cubano/Cubano.ttf')
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./static/font/Gilroy/Gilroy-ExtraBold.otf');
+}
+.bg-filter {
+  filter: brightness(0.75) contrast(1.25);
+}
+
+
+* ::selection {
+  background: #37ff8b;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
