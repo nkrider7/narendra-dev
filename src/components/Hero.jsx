@@ -25,6 +25,9 @@ export default function Hero() {
           Coding dreams, designing visions – where pixels speak volumes.
         </h1>
         <button
+        onClick={() => 
+          window.location.href = "https://www.linkedin.com/in/narendra-a90182223/"
+        }
           type="button"
           className="rounded-md absolute button font-gil  top-[20rem] ml-10   "
           data-text="Awesome"

@@ -6,15 +6,26 @@ import { Projects } from "./Pages/Projects/Projects";
 import { NotFound } from "./components/NotFound";
 import { ProjectView } from "./Pages/Projects/ProjectView";
 import Profile from "./Pages/Profiles/Profile";
+import { useEffect, useState } from "react";
+import PreLoader from "./components/PreLoader";
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000); 
+
+    return () => clearTimeout(timer);
+  }, []);
 
   
 
   return (
     <>
-      <div className="bg-black mx-auto max-w-screen">
+     {loading ? <PreLoader /> : <div className="bg-black mx-auto max-w-screen">
         <Navbar />
         <Routes>
           <Route path="/" element={<Homepage />} />
@@ -24,7 +35,7 @@ function App() {
           <Route path="*" element={<NotFound/>} />
         </Routes>
         <div></div>
-      </div>
+      </div>}
     
     </>
   );
