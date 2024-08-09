@@ -8,7 +8,7 @@ export default function SkillsBox() {
             <div className="h-28 w-40 bg-red-600 rounded-xl font-gil text-[9rem] text-black  overflow-clip hover:text-[2rem] transition flex justify-center items-center ">C++</div>
           </div>
           <div className="flex flex-row md:flex-col gap-2">
-            <div className="h-28 w-40 bg-green-400 rounded-xl font-gil transition hover:rotate-45 text-[1.5rem] text-black flex justify-center items-center "> Python</div>
+            <div className="h-28 w-40 bg-[#37ff8b] rounded-xl font-gil transition hover:rotate-45 text-[1.5rem] text-black flex justify-center items-center "> Python</div>
             <div className="h-28 w-40 border-blue-400 border-4 rounded-xl font-gil text-[1.5rem] text-blue-400 flex justify-center items-center "> TailwindCSS</div>
           </div>
         </div>

@@ -22,25 +22,25 @@ export default function Profile() {
     {
       id: 2,
       name: "Linkdin",
-      link: "https://github.com/nkrider7",
+      link: "https://www.linkedin.com/in/narendra-a90182223/",
       logo: <BsLinkedin size={40} />,
     },
     {
       id: 3,
       name: "Twitter",
-      link: "https://github.com/nkrider7",
+      link: "https://x.com/narendbugfixer",
       logo: <BsTwitter size={40} />,
     },
     {
       id: 4,
       name: "Instagram",
-      link: "https://github.com/nkrider7",
+      link: "https://www.instagram.com/nkriderking/",
       logo: <BsInstagram size={40} />,
     },
     {
       id: 5,
       name: "Facebook",
-      link: "https://github.com/nkrider7",
+      link: "https://www.facebook.com/profile.php?id=100010603034354",
       logo: <BsFacebook size={40} />,
     },
   ];
@@ -51,22 +51,21 @@ export default function Profile() {
           Hello, I'm Narendra!
         </h1>
         <h1 className="text-white font-gil text-4xl md:text-7xl   text-start  ">
-          Full <span className="text-green-400">Stack</span> Develpoer
+          Full <span className="text-[#37ff8b]">Stack</span> Develpoer
         </h1>
         <div className="flex gap-x-3 mt-4 justify-center flex-wrap">
           {links.map((item, index) => (
-            <div
+            <a
+              href={item.link}
               key={index}
               className={`h-24 w-24 rounded-full tooltip tooltip-success bg-green-600/20  hover:bg-green-500/10 border transition  border-emerald-300 flex items-center justify-center }`} data-tip={item.name}
             >
               <span className="text-white"> {item.logo}</span>
-            </div>
+            </a>
           ))}
         </div>
         <p className="py-4 text-gray-300 text-center font-gil">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut error ex
-          consectetur eius! Expedita est a alias dicta error praesentium hic
-          esse! Incidunt?
+        Transforming designs into responsive, user-centric interfaces. Passionate about crafting seamless experiences with clean code and modern front-end technologies.
         </p>
       </div>
     </div>
