@@ -1,23 +1,32 @@
+import { motion, useScroll } from "framer-motion"
+import { useRef } from "react";
+
 export default function MainGrid() {
+    const targetRef = useRef(null);
+    const { scrollYProgress } = useScroll({
+      target: targetRef,
+    });
   return (
     <>
-      <div className="my-2">
-        <h1 className="text-white font-bold text-[2rem] text-center hover:text-gray-300">
-          Heading
+      <motion.div ref={targetRef} className="my-2">
+        <h1   className="text-white font-bold text-[2rem] text-center hover:text-gray-300">
+          😓
         </h1>
-        <div className="p-5 md:p-10">
+        <div  className="p-5 md:p-10">
           <div className="columns-2 gap-5 lg:gap-8 sm:columns-2 lg:columns-3 xl:columns-4 [&>img:not(:first-child)]:mt-5 lg:[&>img:not(:first-child)]:mt-8">
             {images.map((image) => (
-                <img
-                    src={image.url}
-                    alt={image.alt}
-                    key={image.id}
-                    className="rounded-lg hover:scale-95 transition"
-                />
+             <motion.div style={{y:scrollYProgress}} key={image.id}>
+                 <img
+               src={image.url}
+               alt={image.alt}
+               key={image.id}
+               className="rounded-lg hover:scale-95 h-80 bg-blue-600 transition"
+           />
+             </motion.div>
             ))}
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

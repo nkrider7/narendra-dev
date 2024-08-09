@@ -5,13 +5,13 @@ export default function Typingword(){
     <TypeAnimation
       sequence={[
         // Same substring at the start will only be typed out once, initially
-        'Front-End Dev',
+        'UI/UX Designer',
         1000, // wait 1s before replacing "Mice" with "Hamsters"
         'Graphic Designer',
         1000,
-        'MERN Dev',
+        'Digital Marketer',
         1000,
-        'UI/UX Designer',
+        'Video Editor',
         1000,
       ]}
       wrapper="span"
