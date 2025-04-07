@@ -1,6 +1,6 @@
 import React from 'react'
 import "./SocailLink.css"
-import {Instagram, Linkedin } from "lucide-react"
+import {Github, Instagram, Linkedin } from "lucide-react"
 import { IoLogoWhatsapp, IoLogoTwitter } from "react-icons/io";
 
 export default function SocialLink() {
@@ -20,7 +20,7 @@ export default function SocialLink() {
   </li>
   <li className="icon-content">
     <a
-      data-social="X"
+      data-social="telegram"
       aria-label="X"
       href="https:/x.com/narendbugfixer"
     >
@@ -50,6 +50,17 @@ export default function SocialLink() {
       <Linkedin />
     </a>
     <div className="tooltip">Linkedin</div>
+  </li>
+  <li className="icon-content">
+    <a
+      data-social="pinterest"
+      aria-label="Github"
+      href="https://github.com/nkrider7"
+    >
+      <div className="filled"></div>
+      <Github />
+    </a>
+    <div className="tooltip">Github</div>
   </li>
 </ul>
 

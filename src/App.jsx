@@ -7,7 +7,6 @@ import { ProjectView } from "./Pages/Projects/ProjectView";
 import Profile from "./Pages/Profiles/Profile";
 import { useEffect, useState } from "react";
 import PreLoader from "./components/PreLoader";
-import { DesignHome } from "./Pages/Design/DesignHome";
 import { UseSwitch } from "./context/switch";
 import CoderHome from "./Pages/Coder/CoderHome";
 
@@ -32,7 +31,7 @@ function App() {
      {loading ? <PreLoader /> : <div className="bg-black mx-auto max-w-screen">
         <Navbar />
         <Routes>
-          <Route path="/" element={isdesign? <DesignHome />:<CoderHome/>} />
+          <Route path="/" element={<CoderHome/>} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/projects/:id" element={<ProjectView/>} />

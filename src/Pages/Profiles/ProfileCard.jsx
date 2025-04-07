@@ -4,7 +4,7 @@ import ring from "../../assets/ring2.png"
 export default function ProfileCard() {
   return (
     <>
-    <div className="w-full h-fit mt-4 block relative">
+    <div className="w-full   h-fit block relative">
         <div className="w-full h-fit flex justify-center border-b-2 relative">
           <div className="flex justify-center">
             <img

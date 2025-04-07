@@ -6,10 +6,10 @@ import Skills from "./Skills"
 export default function Details() {
   return (
     <>
-      <div className="flex justify-center h-fit">
+      <div className="flex justify-center  h-fit">
         <div className="pt-10">
-          <div className="profileavtar flex items-end gap-x-9 h-90">
-            <div>
+          <div className="profileavtar  flex items-end  gap-x-9 h-90">
+            <div className="flex flex-col items-center md:items-start ">
               <motion.div
                 drag
                 dragConstraints={{
@@ -21,7 +21,7 @@ export default function Details() {
                 className="my-4 border-2 w-fit hover:border-[#37ff8b] border-white rounded-full"
               >
                 <img
-                  src="https://media.licdn.com/dms/image/D4D03AQGDEyMc7DFvWQ/profile-displayphoto-shrink_200_200/0/1681552557632?e=1723680000&v=beta&t=I7GL7908Z2BJ0HB3VmNAAtWAe1i2llIrYc0BHLuJdow"
+                  src="/profile.jpeg"
                   className="h-40 rounded-full "
                   draggable="false"
                   alt="profile"
@@ -32,16 +32,16 @@ export default function Details() {
                   }}
                 />
               </motion.div>
-              <h1 className="text-white font-gil text-5xl   hover:text-gray-300 text-start  ">
+              <h1 className="text-white  text-center font-gil text-5xl   hover:text-gray-300 md:text-start  ">
                
                 Hello, I'm Narendra!{" "}
               </h1>
-              <h1 className="text-white font-gil text-4xl text-start  hover:text-gray-300  ">
+              <h1 className="text-white font-gil text-3xl md:text-start  text-center  hover:text-gray-300  ">
                 I bring visions to life by turning stunning designs{" "}
               </h1>
-              <h1 className="text-white font-gil text-5xl text-start  hover:text-gray-300 ">
+              <h1 className="text-white font-gil text-2xl text-center md:text-4xl md:text-start   hover:text-gray-300 ">
                 into{" "}
-                <span className="text-[#37ff8b]">
+                <span className="text-[#37ff8b] text-2xl md:text-4xl">
                   <Typingword />
                 </span>
                 , code.
